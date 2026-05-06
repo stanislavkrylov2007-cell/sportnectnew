@@ -34,31 +34,9 @@ const config = {
     ],
   ],
 
-  // Исправленный синтаксис для redocusaurus
-  plugins: [
-    [
-      'redocusaurus',
-      {
-        specs: [
-          {
-            spec: 'openapi.yaml',
-            route: '/api/',
-          },
-        ],
-        theme: {
-          primaryColor: '#1890ff',
-        },
-      },
-    ],
-  ],
-
   themeConfig: {
     navbar: {
       title: 'Sportnect',
-      logo: {
-        alt: 'Sportnect Logo',
-        src: 'img/logo.svg',
-      },
       items: [
         {
           type: 'docSidebar',
@@ -67,15 +45,11 @@ const config = {
           label: 'Документация',
         },
         {
-          to: '/api/',
+          href: 'https://raw.githubusercontent.com/stanislavkrylov2007-cell/sportnectnew/main/my-website/openapi.yaml',
           label: 'OpenAPI',
           position: 'left',
         },
       ],
-    },
-    footer: {
-      style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} Sportnect`,
     },
   },
 };
