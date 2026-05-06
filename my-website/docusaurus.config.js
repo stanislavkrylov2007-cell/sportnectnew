@@ -37,8 +37,8 @@ const config = {
       {
         specs: [
           {
-            id: 'sportnect',
             spec: 'openapi.yaml',
+            route: '/api/',
           },
         ],
         theme: {
@@ -51,10 +51,6 @@ const config = {
   themeConfig: {
     navbar: {
       title: 'Sportnect',
-      logo: {
-        alt: 'Sportnect Logo',
-        src: 'img/logo.svg',
-      },
       items: [
         {
           type: 'docSidebar',
@@ -63,15 +59,11 @@ const config = {
           label: 'Документация',
         },
         {
-          to: '/docs/api/sportnect',
+          to: '/api/',
           label: 'API',
           position: 'left',
         },
       ],
-    },
-    footer: {
-      style: 'dark',
-      copyright: `Copyright © ${new Date().getFullYear()} Sportnect`,
     },
   },
 };
