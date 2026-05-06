@@ -22,7 +22,8 @@
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "redocusaurus": "^2.5.0"
+    "redocusaurus": "^2.5.0",
+    "swagger-ui-react": "^5.32.5"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "3.10.1",
