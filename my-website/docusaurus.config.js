@@ -34,7 +34,7 @@ const config = {
     ],
   ],
 
-  // Добавляем плагин для OpenAPI
+  // Исправленный синтаксис для redocusaurus
   plugins: [
     [
       'redocusaurus',
@@ -52,7 +52,6 @@ const config = {
     ],
   ],
 
-  // Настройка навигации
   themeConfig: {
     navbar: {
       title: 'Sportnect',
