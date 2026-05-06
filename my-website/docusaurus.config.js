@@ -33,6 +33,51 @@ const config = {
       },
     ],
   ],
+
+
+  plugins: [
+    [
+      'redocusaurus',
+      {
+        specs: [
+          {
+            spec: 'openapi.yaml',
+            route: '/api/',
+          },
+        ],
+        theme: {
+          primaryColor: '#1890ff',
+        },
+      },
+    ],
+  ],
+
+  themeConfig: {
+    navbar: {
+      title: 'Sportnect',
+      logo: {
+        alt: 'Sportnect Logo',
+        src: 'img/logo.svg',
+      },
+      items: [
+        {
+          type: 'docSidebar',
+          sidebarId: 'docs',
+          position: 'left',
+          label: 'Документация',
+        },
+        {
+          to: '/api/',
+          label: 'OpenAPI',
+          position: 'left',
+        },
+      ],
+    },
+    footer: {
+      style: 'dark',
+      copyright: `Copyright © ${new Date().getFullYear()} Sportnect`,
+    },
+  },
 };
 
 module.exports = config;
