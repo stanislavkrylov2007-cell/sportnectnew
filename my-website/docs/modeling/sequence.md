@@ -1,13 +1,9 @@
-
-### Создай `docs/modeling/sequence.md`:
-
-```markdown
 ---
 title: Sequence Diagram
 sidebar_position: 2
 ---
 
-# Sequence Diagram
+
 
 ```plantuml
 @startuml
