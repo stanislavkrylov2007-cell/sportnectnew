@@ -45,7 +45,7 @@ const config = {
           label: 'Документация',
         },
         {
-          href: 'https://raw.githubusercontent.com/stanislavkrylov2007-cell/sportnectnew/main/my-website/openapi.yaml',
+          to: '/api',     // ← ЭТО ЗАМЕНИЛ (было href)
           label: 'OpenAPI',
           position: 'left',
         },
