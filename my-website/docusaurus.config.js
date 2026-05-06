@@ -40,7 +40,7 @@ const config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'docs',
+          sidebarId: 'tutuorialSidebar',
           position: 'left',
           label: 'Документация',
         },
