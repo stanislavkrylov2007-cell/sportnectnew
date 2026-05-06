@@ -32,11 +32,29 @@ const config = {
         },
       },
     ],
+    [
+      'redocusaurus',
+      {
+        specs: [
+          {
+            id: 'sportnect',
+            spec: 'openapi.yaml',
+          },
+        ],
+        theme: {
+          primaryColor: '#1890ff',
+        },
+      },
+    ],
   ],
 
   themeConfig: {
     navbar: {
       title: 'Sportnect',
+      logo: {
+        alt: 'Sportnect Logo',
+        src: 'img/logo.svg',
+      },
       items: [
         {
           type: 'docSidebar',
@@ -45,11 +63,15 @@ const config = {
           label: 'Документация',
         },
         {
-          to: '/api',     // ← ЭТО ЗАМЕНИЛ (было href)
-          label: 'OpenAPI',
+          to: '/docs/api/sportnect',
+          label: 'API',
           position: 'left',
         },
       ],
+    },
+    footer: {
+      style: 'dark',
+      copyright: `Copyright © ${new Date().getFullYear()} Sportnect`,
     },
   },
 };
