@@ -25,6 +25,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl: 'https://github.com/stanislavkrylov2007-cell/sportnectnew/tree/main/',
+          remarkPlugins: [require('@akebifiky/remark-simple-plantuml')],
         },
         blog: false,
         theme: {
