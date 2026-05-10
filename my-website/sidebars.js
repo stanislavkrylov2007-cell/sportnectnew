@@ -17,6 +17,13 @@ const sidebars = {
     'index',
     {
       type: 'category',
+      label: 'Продукт',
+      items: [
+        'product/description',
+      ],
+    },
+    {
+      type: 'category',
       label: 'Моделирование',
       items: [
         'modeling/usecase',
