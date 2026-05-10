@@ -40,7 +40,8 @@ const sidebars = {
         'modeling/sequence',
         'modeling/erd',
         'modeling/wireframes',
-        'modeling/data-storage'
+        'modeling/data-storage',
+        'modeling/platformization'
       ],
     },
   ],
