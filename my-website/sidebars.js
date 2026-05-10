@@ -34,6 +34,7 @@ const sidebars = {
       type: 'category',
       label: 'Архитектура и технологии',
       items: [
+        'modeling/bpmn',
         'modeling/openapi',
         'modeling/usecase',
         'modeling/sequence',
