@@ -39,7 +39,8 @@ const sidebars = {
         'modeling/usecase',
         'modeling/sequence',
         'modeling/erd',
-        'modeling/wireframes'
+        'modeling/wireframes',
+        'modeling/data-storage'
       ],
     },
   ],
