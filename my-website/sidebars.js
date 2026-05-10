@@ -15,6 +15,7 @@
 const sidebars = {
   tutorialSidebar: [
     'index',
+    'risks',
     {
       type: 'category',
       label: 'Продукт',
