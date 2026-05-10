@@ -22,6 +22,14 @@ const sidebars = {
         'product/description',
       ],
     },
+     {
+      type: 'category',
+      label: 'Требования',
+      items: [
+        'requirements/functional',
+        'requirements/nonfunctional',
+      ],
+    },
     {
       type: 'category',
       label: 'Моделирование',
