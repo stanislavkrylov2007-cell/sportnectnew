@@ -11,4 +11,4 @@ sidebar_position: 4
 
 ## DMN Таблица
 
-![DMN Таблица](![alt text](image.png))
+![alt text](image.png)
