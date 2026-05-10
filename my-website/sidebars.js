@@ -38,6 +38,7 @@ const sidebars = {
         'modeling/openapi',
         'modeling/usecase',
         'modeling/sequence',
+        'modeling/erd'
       ],
     },
   ],
