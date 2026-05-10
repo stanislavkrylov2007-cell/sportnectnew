@@ -41,7 +41,8 @@ const sidebars = {
         'modeling/erd',
         'modeling/wireframes',
         'modeling/data-storage',
-        'modeling/platformization'
+        'modeling/platformization',
+        'modeling/asyncapi'
       ],
     },
   ],
