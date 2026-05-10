@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-requirements/functional" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.10.1">
+<title data-rh="true">Функциональные требования | Sportnect Documentation</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://stanislavkrylov2007-cell.github.io/sportnectnew/docs/requirements/functional"><meta data-rh="true" property="og:locale" content="ru"><meta data-rh="true" name="docusaurus_locale" content="ru"><meta data-rh="true" name="docsearch:language" content="ru"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Функциональные требования | Sportnect Documentation"><meta data-rh="true" name="description" content="FR-1"><meta data-rh="true" property="og:description" content="FR-1"><link data-rh="true" rel="icon" href="/sportnectnew/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://stanislavkrylov2007-cell.github.io/sportnectnew/docs/requirements/functional"><link data-rh="true" rel="alternate" href="https://stanislavkrylov2007-cell.github.io/sportnectnew/docs/requirements/functional" hreflang="ru"><link data-rh="true" rel="alternate" href="https://stanislavkrylov2007-cell.github.io/sportnectnew/docs/requirements/functional" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Функциональные требования","item":"https://stanislavkrylov2007-cell.github.io/sportnectnew/docs/requirements/functional"}]}</script><link rel="stylesheet" href="/sportnectnew/assets/css/styles.159434f6.css">
+<script src="/sportnectnew/assets/js/runtime~main.462648f0.js" defer="defer"></script>
+<script src="/sportnectnew/assets/js/main.547b7ad2.js" defer="defer"></script>
+</head>
+<body>
+<svg style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||"light"),document.documentElement.setAttribute("data-theme-choice",t||"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Перейти к основному содержимому"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Перейти к основному содержимому</a></div><nav aria-label="Main" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Переключить навигационную панель" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/sportnectnew/"><b class="navbar__title text--truncate">Sportnect</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/sportnectnew/docs">Документация</a><a class="navbar__item navbar__link" href="/sportnectnew/api">API</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Переключение между темным и светлым режимом (сейчас используется system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Прокрутка к началу" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/sportnectnew/docs"><span title="Введение и общая информация" class="linkLabel_WmDU">Введение и общая информация</span></a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/sportnectnew/docs/product/description"><span title="Продукт" class="categoryLinkLabel_W154">Продукт</span></a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/sportnectnew/docs/requirements/functional"><span title="Требования" class="categoryLinkLabel_W154">Требования</span></a></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/sportnectnew/docs/requirements/functional"><span title="Функциональные требования" class="linkLabel_WmDU">Функциональные требования</span></a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/sportnectnew/docs/requirements/nonfunctional"><span title="Нефункциональные требования" class="linkLabel_WmDU">Нефункциональные требования</span></a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/sportnectnew/docs/modeling/usecase"><span title="Моделирование" class="categoryLinkLabel_W154">Моделирование</span></a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Навигационная цепочка текущей страницы"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Главная страница" class="breadcrumbs__link" href="/sportnectnew/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">Требования</span></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Функциональные требования</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">Содержание этой страницы</button></div><div class="theme-doc-markdown markdown"><header><h1>Функциональные требования</h1></header>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fr-1">FR-1<a href="#fr-1" class="hash-link" aria-label="Прямая ссылка на FR-1" title="Прямая ссылка на FR-1" translate="no">​</a></h2>
+<p>Регистрация/вход на сайт</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fr-2">FR-2<a href="#fr-2" class="hash-link" aria-label="Прямая ссылка на FR-2" title="Прямая ссылка на FR-2" translate="no">​</a></h2>
+<p>После входа на аккаунт появляется меню:</p>
+<ol>
+<li class="">Найти свободные игры на карте</li>
+<li class="">Найти свободные корты на карте, чтобы создать событие</li>
+<li class="">Уведомления</li>
+<li class="">Поддержка</li>
+</ol>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fr-3">FR-3<a href="#fr-3" class="hash-link" aria-label="Прямая ссылка на FR-3" title="Прямая ссылка на FR-3" translate="no">​</a></h2>
+<p>Запись на событие и подтверждение (если игрок)</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fr-4">FR-4<a href="#fr-4" class="hash-link" aria-label="Прямая ссылка на FR-4" title="Прямая ссылка на FR-4" translate="no">​</a></h2>
+<p>Создание события (если организатор)</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fr-5">FR-5<a href="#fr-5" class="hash-link" aria-label="Прямая ссылка на FR-5" title="Прямая ссылка на FR-5" translate="no">​</a></h2>
+<p>После завершения события участники могут оценить прошедшую игру по шкале 1–5 и при желании оценить отдельных игроков, что влияет на их рейтинг.</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fr-6">FR-6<a href="#fr-6" class="hash-link" aria-label="Прямая ссылка на FR-6" title="Прямая ссылка на FR-6" translate="no">​</a></h2>
+<p>В разделе «Уведомления» будут отображаться список уведомлений по типу (&quot;Заявка на игру принята&quot;)</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="fr-7">FR-7<a href="#fr-7" class="hash-link" aria-label="Прямая ссылка на FR-7" title="Прямая ссылка на FR-7" translate="no">​</a></h2>
+<p>В разделе «Поддержка» отображается форма обратной связи:</p>
+<ol>
+<li class="">Тема</li>
+<li class="">Текст сообщения</li>
+<li class="">Кнопка «Отправить»</li>
+</ol>
+<hr>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="use-case-для-4-основных-функций">Use Case (для 4 основных функций)<a href="#use-case-для-4-основных-функций" class="hash-link" aria-label="Прямая ссылка на Use Case (для 4 основных функций)" title="Прямая ссылка на Use Case (для 4 основных функций)" translate="no">​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uc-1-регистрациявход">UC-1: Регистрация/вход<a href="#uc-1-регистрациявход" class="hash-link" aria-label="Прямая ссылка на UC-1: Регистрация/вход" title="Прямая ссылка на UC-1: Регистрация/вход" translate="no">​</a></h3>
+<table><thead><tr><th>Поле</th><th>Значение</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td>UC-1</td></tr><tr><td><strong>Название</strong></td><td>Регистрация и вход в систему</td></tr><tr><td><strong>Акторы</strong></td><td>Новый или существующий пользователь</td></tr><tr><td><strong>Предусловия</strong></td><td>Пользователь открыл сайт, не авторизован</td></tr></tbody></table>
+<p><strong>Основной поток:</strong></p>
+<ol>
+<li class="">
+<p><strong>Выбор действия</strong> — Пользователь выбирает «Вход» или «Регистрация»</p>
+</li>
+<li class="">
+<p><strong>Вход (если выбран вход)</strong><br>
+<!-- -->2.1 Система показывает форму входа (почта, пароль)<br>
+<!-- -->2.2 Пользователь вводит почту и пароль<br>
+<!-- -->2.3 Система проверяет данные<br>
+<!-- -->2.4 Если данные верны — пользователь авторизован и перенаправлен в главное меню</p>
+</li>
+<li class="">
+<p><strong>Регистрация (если выбрана регистрация)</strong><br>
+<!-- -->3.1 Система показывает форму регистрации (почта, пароль, уровень игры)<br>
+<!-- -->3.2 Пользователь вводит данные и выбирает уровень<br>
+<!-- -->3.3 Система проверяет, что почта не занята<br>
+<!-- -->3.4 Система создаёт учётную запись<br>
+<!-- -->3.5 Система автоматически авторизует пользователя<br>
+<!-- -->3.6 Пользователь перенаправлен в главное меню</p>
+</li>
+</ol>
+<p><strong>Постусловия:</strong> Пользователь успешно авторизован в системе.</p>
+<p><strong>Альтернативный поток:</strong></p>
+<ul>
+<li class="">2.3а Неверный пароль → Система сообщает «Неверный пароль» и предлагает повторить или восстановить пароль</li>
+<li class="">3.3а Почта уже занята → Система сообщает «Эта почта уже зарегистрирована» и предлагает войти</li>
+</ul>
+<p><strong>Исключительный поток:</strong></p>
+<ul>
+<li class="">3.4a Технический сбой → Система сообщает «Не удалось создать аккаунт. Попробуйте позже» и логирует ошибку для разработчика.</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uc-2-создание-события">UC-2: Создание события<a href="#uc-2-создание-события" class="hash-link" aria-label="Прямая ссылка на UC-2: Создание события" title="Прямая ссылка на UC-2: Создание события" translate="no">​</a></h3>
+<table><thead><tr><th>Поле</th><th>Значение</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td>UC-2</td></tr><tr><td><strong>Название</strong></td><td>Создание события</td></tr><tr><td><strong>Акторы</strong></td><td>Авторизованный пользователь (организатор)</td></tr><tr><td><strong>Предусловия</strong></td><td>Пользователь авторизован, открыл раздел «Найти свободные корты»</td></tr></tbody></table>
+<p><strong>Основной поток:</strong></p>
+<ol>
+<li class="">Пользователь выбирает площадку на карте</li>
+<li class="">Система показывает информацию о площадке и кнопку «Создать событие здесь»</li>
+<li class="">Пользователь нажимает кнопку</li>
+<li class="">Система открывает форму создания события:<!-- -->
+<ul>
+<li class="">Уровень игры (выбор)</li>
+<li class="">Дата и время</li>
+<li class="">Количество участников</li>
+<li class="">Цена с человека (если корт платный)</li>
+</ul>
+</li>
+<li class="">Пользователь заполняет поля и нажимает «Опубликовать»</li>
+<li class="">Система проверяет заполнение обязательных полей</li>
+<li class="">Система сохраняет событие</li>
+<li class="">Событие появляется на карте в разделе «Найти свободные игры»</li>
+</ol>
+<p><strong>Постусловия:</strong> Событие создано, доступно для просмотра и записи</p>
+<p><strong>Альтернативный поток:</strong></p>
+<ul>
+<li class="">6а Обязательные поля не заполнены → Система подсвечивает незаполненные поля и не даёт опубликовать</li>
+</ul>
+<p><strong>Исключительный поток:</strong></p>
+<ul>
+<li class="">3.4a Технический сбой → Система сообщает «Не удалось создать событие. Попробуйте позже» и логирует ошибку</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uc-3-запись-на-событие-и-подтверждение">UC-3: Запись на событие и подтверждение<a href="#uc-3-запись-на-событие-и-подтверждение" class="hash-link" aria-label="Прямая ссылка на UC-3: Запись на событие и подтверждение" title="Прямая ссылка на UC-3: Запись на событие и подтверждение" translate="no">​</a></h3>
+<table><thead><tr><th>Поле</th><th>Значение</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td>UC-3</td></tr><tr><td><strong>Название</strong></td><td>Запись на игру и подтверждение организатором</td></tr><tr><td><strong>Акторы</strong></td><td>Игрок, Организатор</td></tr><tr><td><strong>Предусловия</strong></td><td>Оба пользователя авторизованы, событие существует и активно</td></tr></tbody></table>
+<p><strong>Основной поток:</strong></p>
+<p><strong>1. Запись игрока</strong><br>
+<!-- -->1.1 Игрок находит событие на карте и открывает карточку<br>
+<!-- -->1.2 Игрок нажимает «Записаться»<br>
+<!-- -->1.3 Система проверяет наличие свободных мест<br>
+<!-- -->1.4 Система добавляет игрока в список участников со статусом «ожидает подтверждения»<br>
+<!-- -->1.5 Система отправляет уведомление организатору<br>
+<!-- -->1.6 Игрок видит сообщение «Заявка отправлена»</p>
+<p><strong>2. Подтверждение организатором</strong><br>
+<!-- -->2.1 Организатор открывает карточку события<br>
+<!-- -->2.2 Организатор видит список заявок<br>
+<!-- -->2.3 Организатор нажимает «Подтвердить» напротив заявки игрока<br>
+<!-- -->2.4 Система меняет статус игрока на «подтверждено»<br>
+<!-- -->2.5 Система отправляет уведомление игроку «Заявка подтверждена»</p>
+<p><strong>Постусловия:</strong> Игрок подтверждён, место занято</p>
+<p><strong>Альтернативный поток:</strong></p>
+<ul>
+<li class="">1.3а Мест нет → Система сообщает «Свободных мест нет» и предлагает добавиться в лист ожидания</li>
+<li class="">2.3а Организатор отклоняет заявку → Статус меняется на «отклонено», уведомление игроку, место освобождается</li>
+</ul>
+<hr>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="uc-4-оценка-прошедшего-события">UC-4: Оценка прошедшего события<a href="#uc-4-оценка-прошедшего-события" class="hash-link" aria-label="Прямая ссылка на UC-4: Оценка прошедшего события" title="Прямая ссылка на UC-4: Оценка прошедшего события" translate="no">​</a></h3>
+<table><thead><tr><th>Поле</th><th>Значение</th></tr></thead><tbody><tr><td><strong>ID</strong></td><td>UC-4</td></tr><tr><td><strong>Название</strong></td><td>Оценка прошедшего события и игроков</td></tr><tr><td><strong>Акторы</strong></td><td>Участник события (игрок, организатор)</td></tr><tr><td><strong>Предусловия</strong></td><td>Событие завершено (дата и время прошли), пользователь был участником</td></tr></tbody></table>
+<p><strong>Основной поток:</strong></p>
+<ol>
+<li class="">Система отправляет уведомление с предложением оценить событие</li>
+<li class="">Пользователь открывает карточку завершённого события</li>
+<li class="">Система отображает форму оценки</li>
+<li class="">Пользователь ставит общую оценку событию (1–5) — обязательно</li>
+<li class="">(Опционально) Пользователь может оценить каждого участника (1–5)</li>
+<li class="">(Опционально) Пользователь может оставить текстовый отзыв</li>
+<li class="">Пользователь нажимает «Отправить»</li>
+<li class="">Система сохраняет оценки и обновляет рейтинг события и игроков</li>
+</ol>
+<p><strong>Постусловия:</strong> Оценка сохранена, рейтинг обновлён</p>
+<p><strong>Альтернативный поток:</strong></p>
+<ul>
+<li class="">4а Пользователь пропускает оценку → система напоминает через день, но не более 3 раз</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href="https://github.com/stanislavkrylov2007-cell/sportnectnew/tree/main/docs/requirements/functional.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Отредактировать эту страницу</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Страница документа"><a class="pagination-nav__link pagination-nav__link--prev" href="/sportnectnew/docs/product/description"><div class="pagination-nav__sublabel">Предыдущая страница</div><div class="pagination-nav__label">Описание продукта</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/sportnectnew/docs/requirements/nonfunctional"><div class="pagination-nav__sublabel">Следующая страница</div><div class="pagination-nav__label">Нефункциональные требования</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#fr-1" class="table-of-contents__link toc-highlight">FR-1</a></li><li><a href="#fr-2" class="table-of-contents__link toc-highlight">FR-2</a></li><li><a href="#fr-3" class="table-of-contents__link toc-highlight">FR-3</a></li><li><a href="#fr-4" class="table-of-contents__link toc-highlight">FR-4</a></li><li><a href="#fr-5" class="table-of-contents__link toc-highlight">FR-5</a></li><li><a href="#fr-6" class="table-of-contents__link toc-highlight">FR-6</a></li><li><a href="#fr-7" class="table-of-contents__link toc-highlight">FR-7</a></li><li><a href="#use-case-для-4-основных-функций" class="table-of-contents__link toc-highlight">Use Case (для 4 основных функций)</a><ul><li><a href="#uc-1-регистрациявход" class="table-of-contents__link toc-highlight">UC-1: Регистрация/вход</a></li><li><a href="#uc-2-создание-события" class="table-of-contents__link toc-highlight">UC-2: Создание события</a></li><li><a href="#uc-3-запись-на-событие-и-подтверждение" class="table-of-contents__link toc-highlight">UC-3: Запись на событие и подтверждение</a></li><li><a href="#uc-4-оценка-прошедшего-события" class="table-of-contents__link toc-highlight">UC-4: Оценка прошедшего события</a></li></ul></li></ul></div></div></div></div></main></div></div></div></div>
+</body>
+</html>
