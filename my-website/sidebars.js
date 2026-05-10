@@ -14,7 +14,7 @@
  */
 const sidebars = {
   tutorialSidebar: [
-    'opisanie',
+    'index',
     {
       type: 'category',
       label: 'Моделирование',
