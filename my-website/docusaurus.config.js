@@ -39,7 +39,7 @@ const config = {
         specs: [
           {
             spec: 'openapi.yaml',
-            route: '/api/',
+            route: '/docs/modeling/openapi',
           },
         ],
         theme: {
@@ -58,11 +58,6 @@ const config = {
           sidebarId: 'tutorialSidebar',
           position: 'left',
           label: 'Документация',
-        },
-        {
-          to: '/api/',
-          label: 'API',
-          position: 'left',
         },
       ],
     },

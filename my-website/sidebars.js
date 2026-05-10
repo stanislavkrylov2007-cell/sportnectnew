@@ -32,8 +32,9 @@ const sidebars = {
     },
     {
       type: 'category',
-      label: 'Моделирование',
+      label: 'Архитектура и технологии',
       items: [
+        'modeling/openapi',
         'modeling/usecase',
         'modeling/sequence',
       ],
